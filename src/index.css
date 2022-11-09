@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Anybody');
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+@import url('https://fonts.googleapis.com/css?family=Baumans');
+@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Germania+One');
+
+body
+{
+	background-color: black !important;
+}
+
+.wrapper
+{
+	text-align: center;
+}
+
+.inline
+{
+	display: inline-block;
+}
+
+.title
+{
+	font-family: "Uncial Antiqua";
+	font-size: 48px;
+	color: white;
+	padding-top: 15px;
+	display: inline;
+	
+	text-shadow: 0 0 7px #ffffff,
+    0 0 10px #ffffff,
+    0 0 21px #ffffff,
+    0 0 42px #8bf9ff,
+    0 0 82px #8bf9ff,
+    0 0 92px #8bf9ff,
+    0 0 102px #8bf9ff,
+    0 0 151px #8bf9ff;
+}
+
+p
+{
+	font-family: "Macondo";
+}
+
+.header
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-outline-info p
+{
+	font-size: 18px !important;
+	/*color: white;*/
+	/*display: table-cell;*/
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* dropdown text containing instructions on how to play the game */
+.howToPlay
+{
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.howToPlay p
+{
+	color: white;
+	font-size: 20px;
+}
+
+/* for the squares that contain a digit of a guess */
+.square
+{
+	height: 80px;
+	width: 80px;
+	/*background-color: #8bf9ff;*/
+	border-color: black;
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 15px;
+	vertical-align: top;
+}
+.square p
+{
+	font-size: 48px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* for the submit and clear buttons */
+.submit-button, .clear-button
+{
+	height: 80px;
+	width: 90px;
+	margin-top: 15px;
+	margin-right: 15px;
+	vertical-align: top !important;
+	/*background-color: grey !important;*/
+}
+.submit-button p, .clear-button p
+{
+	font-size: 22px !important;
+	/*color: white;*/
+	/*display: table-cell;*/
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	
+	/*display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);*/
+}
+
+/* for the numbers given as feedback for each guess */
+.redwhite
+{
+	height: 80px;
+	width: 90px;
+	vertical-align: top;
+	background-color: grey;
+	border-color: black;
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 15px;
+	text-align: center;
+}
+.redwhite p
+{
+	font-size: 48px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline;
+}
+.redwhite .red
+{
+	color: #ff8e80;
+}
+.redwhite .white
+{
+	color: #EEEEEE;
+}
+
+/* for message printed when user solves code */
+.solvemsg
+{
+	height: 80px;
+	width: 575px;
+	vertical-align: top;
+	background-color: grey;
+	border-color: black;
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 39px;
+	text-align: center;
+}
+.solvemsg p
+{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	display: inline;
+	
+	position: relative;
+	top: 25%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* for the numbered buttons */
+.num-button
+{
+	font-size: 48px !important;
+	height: 80px;
+	width: 80px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+/* setting specific colours for numbered buttons */
+.button-1
+{
+	background-color: #d63384 !important;
+}
+.button-2
+{
+	background-color: #dc3545 !important;
+}
+.button-3
+{
+	background-color: #fd7e14 !important;
+}
+.button-4
+{
+	background-color: #ffc107 !important;
+}
+.button-5
+{
+	background-color: #198754 !important;
+}
+.button-6
+{
+	background-color: #20c997 !important;
+}
+.button-7
+{
+	background-color: #0dcaf0 !important;
+}
+.button-8
+{
+	background-color: #0d6efd !important;
+}
+.button-9
+{
+	background-color: #6610f2 !important;
+}
+.button-0
+{
+	background-color: #6f42c1 !important;
+}
+.button-1 p, .button-2 p, .button-5 p, .button-8 p, .button-9 p, .button-0 p
+{
+	color: white;
+}
+
+/* for smaller screen sizes */
+
+@media (max-width: 700px)
+{
+	.square, .num-button
+	{
+		height: 60px;
+		width: 60px;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+
+	.submit-button, .clear-button, .redwhite
+	{
+		height: 60px;
+		width: 80px;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	
+	.solvemsg
+	{
+		height: 60px;
+		width: 449.5px;
+		margin-top: 10px;
+		margin-right: 33px;
+	}
+	
+	.square p, .num-button p, .redwhite p
+	{
+		font-size: 36px;
+	}
+	
+	.submit-button p, .clear-button p
+	{
+		font-size: 18px !important;
+	}
+	
+	.solvemsg p
+	{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 565px)
+{
+	.square, .num-button
+	{
+		height: 40px;
+		width: 40px;
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+
+	.submit-button, .clear-button, .redwhite
+	{
+		height: 40px;
+		width: 50px;
+		margin-right: 5px;
+		margin-top: 5px;
+		padding: 0px !important;
+	}
+	
+	.solvemsg
+	{
+		height: 40px;
+		width: 285px;
+		margin-right: 28.5px;
+		margin-top: 5px;
+	}
+	
+	.square p, .num-button p, .redwhite p
+	{
+		font-size: 24px;
+	}
+	
+	.submit-button p, .clear-button p
+	{
+		font-size: 14px !important;
+	}
+	
+	.solvemsg p
+	{
+		font-size: 16px;
+		position: relative;
+		top: 10%;
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}

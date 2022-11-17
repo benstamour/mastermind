@@ -182,9 +182,17 @@ class Game extends React.Component
 						<br/>
 						<p>The computer has generated a secret random 4-digit code. Click the numbered buttons at the bottom to enter a guess, and press the Submit button to see how close it is to the computer's code. Each number can appear at most once in the code.</p>
 						<br/>
-						<p>Once you submit your guess, you will see two numbers. The number in red indicates the number of digits in your guess that appear in the secret code in the <b>SAME</b> position. The number in grey represents the number of digits in your guess that appear in the secret code but in a <b>DIFFERENT</b> position.</p>
+						<p>Once you submit your guess, you will see two numbers. The number in <b><span className="red">red</span></b> indicates the number of digits in your guess that appear in the secret code in the <b>SAME</b> position. The number in <b><span className="white">grey</span></b> represents the number of digits in your guess that appear in the secret code but in a <b>DIFFERENT</b> position.</p>
 						<br/>
-						<p>The goal is to guess the secret code in the fewest number of guesses!</p>
+						<p>For example, here are some sample guesses and outputs for a secret code of <b><span className="red">1234</span></b>:</p>
+						<br/>
+						<p>3456 → <span className="red">0</span> <span className="white">2</span></p>
+						<p>1437 → <span className="red">2</span> <span className="white">1</span></p>
+						<p>8290 → <span className="red">1</span> <span className="white">0</span></p>
+						<p>5678 → <span className="red">0</span> <span className="white">0</span></p>
+						<p>1234 → <span className="red">4</span> <span className="white">0</span></p>
+						<br/>
+						<p>The goal is to guess the secret code in the fewest number of guesses possible!</p>
 					</div>
 				</header>
 				<br/>
